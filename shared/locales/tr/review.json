@@ -1,0 +1,78 @@
+{
+  "title": "Yıllık özeti paylaş",
+  "fileName": "subscriptions-{year}-in-review-{style}.png",
+  "style": {
+    "poster": "Poster",
+    "receipt": "Fiş",
+    "card": "Kart",
+    "stars": "Harcama dağılımı"
+  },
+  "unassigned": "Atanmamış",
+  "me": "Ben",
+  "whose": "{name}",
+  "whoseSelf": "Ben",
+  "topSpend": "En yüksek harcama",
+  "ofYear": "Yıllık harcamanın {pct} kadarı",
+  "n": {
+    "subs": {
+      "one": "{count} abonelik",
+      "other": "{count} abonelik"
+    },
+    "charges": {
+      "one": "{count} ödeme",
+      "other": "{count} ödeme"
+    },
+    "currencies": {
+      "one": "{count} para birimi",
+      "other": "{count} para birimi"
+    }
+  },
+  "receipt": {
+    "shop": "Abonelik defteri: {whose}",
+    "asOf": "Yıllık özet\n{date} itibarıyla",
+    "fullYear": "{year} yıllık özeti",
+    "no": "No. {no}",
+    "item": "Ürün",
+    "share": "Pay",
+    "amount": "Tutar",
+    "rest": "{count} tane daha",
+    "count": "Ürün {items} / Ödeme {charges}",
+    "total": "TOPLAM"
+  },
+  "poster": {
+    "kicker": "Yıllık abonelik özeti: {whose}",
+    "ongoing": "{subs}\n{charges}",
+    "ongoingHidden": "{charges}\n{currencies}",
+    "year": "{subs}\n{charges}",
+    "yearHidden": "{charges}\n{currencies}",
+    "newEnded": "{added} yeni\n{ended} sona eren",
+    "perDay": "Günde ortalama {amount}"
+  },
+  "card": {
+    "head": "Abonelikler: {whose}",
+    "intro": {
+      "ongoing": "Yıl başından beri harcama",
+      "ongoingHidden": "Yıl başından beri abonelikler",
+      "year": "Yıllık harcama",
+      "yearHidden": "Yıl içindeki abonelikler"
+    },
+    "perDay": "Günde ortalama {amount}",
+    "longest": "En uzun süren abonelik",
+    "duration": "{y} yıl {m} ay",
+    "busiest": "En çok harcama yapılan ay",
+    "month": "{month}",
+    "newEnded": "Yeni / sona eren",
+    "saved": "{amount} tasarruf",
+    "ended": "{count} sona erdi",
+    "noneEnded": "Sona eren abonelik yok",
+    "currencies": "Kullanılan para birimleri",
+    "currencyCount": "{count}",
+    "nowMonthly": "Güncel aylık maliyet {amount}"
+  },
+  "stars": {
+    "head": "{year}\nAbonelik harcamaları: {whose}",
+    "foot": "Daire büyüklüğü harcamayı gösterir"
+  },
+  "spendBasis": "Üyeler adına yapılan avanslar dahil ödenen toplam tutar",
+  "stopLoss": "Bu yıl iade edilmeyen kayıp: {amount}"
+}

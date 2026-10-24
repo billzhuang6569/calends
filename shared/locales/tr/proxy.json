@@ -1,0 +1,92 @@
+{
+  "filter": {
+    "all": "Tümü",
+    "live": "Devam eden",
+    "owe": "Alacak",
+    "ended": "Biten",
+    "none": "Eşleşen ödeme yok"
+  },
+  "title": "Başkaları için",
+  "status": {
+    "active": "Etkin",
+    "ending": "Sona eriyor",
+    "ended": "Durduruldu"
+  },
+  "owedPeriods": {
+    "one": "{count} ödeme bekliyor",
+    "other": "{count} ödeme bekliyor"
+  },
+  "viewSub": "Aboneliği gör",
+  "stoppedOn": "\n{date} durduruldu",
+  "nextOn": "\nsonraki {date}",
+  "payFor": "{name} için",
+  "unset": "belirtilmedi",
+  "paidPeriods": {
+    "one": "{count} ödeme yapıldı",
+    "other": "{count} ödeme yapıldı"
+  },
+  "received": "Geri ödenen",
+  "owed": "Borç",
+  "settled": "Ödeşildi",
+  "detailTitle": "Başkaları için",
+  "cardCcy": "\nkart {ccy} ile ödüyor",
+  "forWhom": "Kimin için",
+  "method": "Ödeme yöntemi",
+  "subscription": "Abonelik",
+  "viewDetail": "Abonelik ayrıntılarını gör",
+  "stoppedAt": "Durdurulma tarihi",
+  "nextCharge": "Sonraki ödeme",
+  "note": "Not",
+  "diffLabel": "Geri ödenen − ödenen",
+  "table": {
+    "cost": "O anki maliyet",
+    "total": "Toplam\n{count}",
+    "receivedOn": "{date} alındı",
+    "date": "Ödeme tarihi",
+    "charged": "Ödenen",
+    "received": "Geri ödenen",
+    "diff": "Fark",
+    "record": "Kayıt",
+    "even": "Eşit",
+    "none": "Henüz ödeme yok."
+  },
+  "entry": {
+    "markedDue": "Borç olarak işaretlendi",
+    "saved": "Kaydedildi",
+    "title": "{date} tarihli ödeme",
+    "markDue": "Borç olarak işaretle",
+    "cancel": "Vazgeç",
+    "save": "Kaydet",
+    "chargedFoot": "Ödeme tarihindeki kurla {amount}. Liste fiyatını ({list}) kullanmak için boş bırakın.",
+    "amount": "Tutar",
+    "currency": "Para birimi",
+    "paidBack": "{name} bana geri ödedi",
+    "paidBackAnon": "Bana geri ödendi",
+    "receivedEmpty": "Henüz alınmadıysa boş bırakın.",
+    "receivedEven": "Alınma tarihindeki kurla {amount}, ödenenle eşit.",
+    "receivedMore": "Alınma tarihindeki kurla {amount}, ödenenden {diff} fazla.",
+    "receivedLess": "Alınma tarihindeki kurla {amount}, ödenenden {diff} az.",
+    "notReceived": "Alınmadı",
+    "receivedOn": "Alınma tarihi",
+    "notePlaceholder": "İsteğe bağlı, ör. banka havalesi"
+  },
+  "page": {
+    "owedSub": {
+      "one": "{count} ödenmemiş, ödeme tarihindeki kurlarla",
+      "other": "{count} ödenmemiş, ödeme tarihindeki kurlarla"
+    },
+    "allBack": "Tamamı geri ödendi",
+    "total": "Toplam ödenen",
+    "totalSub": {
+      "one": "{count} ödeme\n{subs}",
+      "other": "{count} ödeme\n{subs}"
+    },
+    "subs": {
+      "one": "{count} abonelik",
+      "other": "{count} abonelik"
+    },
+    "diffSub": "Geri ödenen ödemelerde kur ve ücretlerden kaynaklanan fark",
+    "emptyTitle": "Henüz başkası için ödeme yok",
+    "emptyBody": "Bir abonelik oluşturun veya düzenleyin, “Kim kullanıyor” altında “Başkası için ödüyorum” seçeneğini seçip kimin için olduğunu girin."
+  }
+}

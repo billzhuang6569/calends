@@ -1,0 +1,74 @@
+{
+  "title": "Suscripciones de {name}",
+  "loadFailed": "No se pudo cargar",
+  "theme": {
+    "title": "Tema: {mode} (haz clic para cambiar)",
+    "aria": "Tema: {mode}, haz clic para cambiar"
+  },
+  "currency": "Moneda de visualización",
+  "hero": {
+    "monthly": "Gasto mensual en suscripciones",
+    "flat": "Igual que este mes del año pasado",
+    "more": "{amount} más que este mes del año pasado",
+    "less": "{amount} menos que este mes del año pasado",
+    "yearly": "Al año",
+    "live": "Activas",
+    "paid": "Pagado desde {year}"
+  },
+  "timeline": {
+    "title": "Cronología",
+    "upcoming": {
+      "one": "{count} cobro en los próximos 30 días\n{amount}",
+      "other": "{count} cobros en los próximos 30 días\n{amount}"
+    }
+  },
+  "chart": {
+    "title": "Cobros mensuales",
+    "desc": "Últimos 12 meses y próximos 3; las barras discontinuas son previsiones",
+    "paid": "Pagado",
+    "mrr": "Coste mensual",
+    "charge": "Cobrado",
+    "thisMonth": "Este mes",
+    "projected": "{month}\nPrevisto"
+  },
+  "ended": {
+    "title": "Canceladas",
+    "saved": "{amount} menos al mes desde la cancelación"
+  },
+  "perMonth": "{amount}/mes",
+  "lifetime": {
+    "title": "De por vida",
+    "desc": "Pago único, sin más cobros"
+  },
+  "composition": {
+    "title": "Desglose",
+    "desc": "Coste mensual por categoría",
+    "other": "Otros"
+  },
+  "count": "{count}",
+  "fx": {
+    "title": "Tipos de cambio",
+    "flat": "Los tipos de cambio apenas han variado los costes en el último año",
+    "less": "Con los tipos de hoy pagas {amount} menos al mes que hace un año",
+    "more": "Con los tipos de hoy pagas {amount} más al mes que hace un año",
+    "share": "{pct}%"
+  },
+  "list": {
+    "title": "Suscripciones",
+    "summary": {
+      "one": "{count}\n{amount}/mes",
+      "other": "{count}\n{amount}/mes"
+    },
+    "all": "Todas"
+  },
+  "row": {
+    "ends": "\nTermina el {date}",
+    "renews": "\nSe renueva {date}",
+    "monthly": "Mensual",
+    "perMonthEq": "Al mes"
+  },
+  "titleAnon": "Suscripciones",
+  "pile": {
+    "label": "Tus suscripciones apiladas: cuanto más grande, más cuesta"
+  }
+}

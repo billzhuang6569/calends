@@ -1,0 +1,330 @@
+{
+  "sheet": {
+    "paidOut": "Ödenen {amount}",
+    "receiptHint": "Biri ödediğinde üyenin yanındaki “Tahsil et”e dokunun",
+    "tabIn": "Alınan {count}",
+    "tabOut": "Ödenen {count}",
+    "chargeDate": "Ödeme günü",
+    "refund": "İade",
+    "noCharges": "Henüz ödeme yok",
+    "people": "{count} kişi",
+    "title": "Ortak plan",
+    "seats": "Koltuk",
+    "seatsVal": "{used}/{total}",
+    "since": "Başlangıç",
+    "members": "Üyeler",
+    "receipts": "Alınan ödemeler",
+    "receiptsSum": "{count}\n{amount}",
+    "date": "Tarih",
+    "member": "Üye",
+    "covers": "Dönem",
+    "amount": "Tutar",
+    "expandAll": "Tümünü genişlet",
+    "collapseAll": "Tümünü daralt",
+    "groupSum": {
+      "one": "{count} ödeme\n{amount}",
+      "other": "{count} ödeme\n{amount}"
+    },
+    "fee": "Ücret",
+    "nextCollection": "Sonraki tahsilat",
+    "actions": "İşlemler",
+    "status": "Ödeme durumu",
+    "period": "Geçerli dönem",
+    "range": "{from} – {until}",
+    "rangeFrom": "Başlangıç",
+    "rangeTo": "Bitiş",
+    "showAllPeriods": "{count} dönemin tümünü göster",
+    "vacancy": "Boş yer",
+    "departed": "{count} kişi ayrıldı",
+    "hidePersonal": "Kişisel bilgileri gizle",
+    "showPersonal": "Kişisel bilgileri göster",
+    "hiddenMember": "Gizli üye",
+    "addMember": "Üye ekle",
+    "vacancyTrack": "Şimdilik boş",
+    "copyFailed": "Görsel kopyalanamadı",
+    "ownerFee": "Düzenleyen"
+  },
+  "contact": {
+    "via": {
+      "wechat": "WeChat",
+      "email": "E-posta",
+      "phone": "Telefon",
+      "other": "Diğer"
+    },
+    "hint": {
+      "wechat": "WeChat ID",
+      "discord": "Kullanıcı adı",
+      "generic": "Hesap / ID"
+    },
+    "viaAria": "İletişim yöntemi",
+    "open": "{via} uygulamasını aç"
+  },
+  "member": {
+    "defaultName": "üye",
+    "unnamed": "Adsız",
+    "toastPaid": "{name} kişisinden {amount} kaydedildi",
+    "paymentRemoved": "Ödeme silindi",
+    "copied": {
+      "one": "{count} üyeye kopyalandı",
+      "other": "{count} üyeye kopyalandı"
+    },
+    "titleNew": "Üye ekle\n{name}",
+    "confirmDelete": "“{name}” kalıcı olarak silinsin mi? Ödeme geçmişi de silinir ve kayıtlı geliriniz azalır.\nYalnızca plandan ayrıldıysa bunun yerine ayrılış tarihi girin.",
+    "deleted": "Silindi",
+    "delete": "Sil",
+    "cancel": "Vazgeç",
+    "added": "Üye eklendi",
+    "saved": "Kaydedildi",
+    "add": "Ekle",
+    "save": "Kaydet",
+    "group": "Üye",
+    "name": "Ad",
+    "namePh": "Ona ne diyorsunuz",
+    "contact": "İletişim",
+    "account": "Üye hesabı",
+    "accountPh": "{name} için e-posta, telefon, kullanıcı adı veya ID",
+    "joined": "Katılma",
+    "joinedPh": "Plan başlangıcı ({date})",
+    "notSet": "Belirtilmedi",
+    "left": "Ayrılma",
+    "leftPh": "Hâlâ planda",
+    "feeGroup": "Ücret",
+    "seg": {
+      "m1": "Aylık",
+      "m3": "Üç aylık",
+      "m6": "Altı aylık",
+      "m12": "Yıllık"
+    },
+    "feeLabel": {
+      "m1": "Aylık",
+      "m3": "Üç aylık",
+      "m6": "Altı aylık",
+      "m12": "Yıllık",
+      "custom": {
+        "one": "{count} ayda bir",
+        "other": "{count} ayda bir"
+      }
+    },
+    "feeCcyAria": "Para birimi",
+    "exempt": "Ödemiyor",
+    "other": "Diğer",
+    "source": "Kaynak",
+    "sourcePh": "Hangi gruptan / kim önerdi",
+    "payments": "Ödemeler\n{count}",
+    "receivedTotal": "Toplam yaklaşık {amount} alındı",
+    "paidUntil": "Ödendiği tarih",
+    "paidUntilPh": "Henüz ödeme yok",
+    "payCover": "{date} alındı\n{from}–{until} dönemi",
+    "payCoverTo": "{date} alındı\n{until} tarihine kadar",
+    "copyAria": "Diğer üyelere kopyala",
+    "removePayAria": "Ödemeyi sil",
+    "dup": "Zaten kayıtlı",
+    "paidUntilDate": "{date} tarihine kadar ödendi",
+    "noPay": "Henüz ödeme yok",
+    "copyN": "{count} üyeye kopyala",
+    "amount": "Tutar",
+    "currency": "Para birimi",
+    "coverFrom": "Dönem başı",
+    "coverTo": "Dönem sonu",
+    "coverAuto": {
+      "m1": "Ödeme dönemine göre ayarlanır; düzenlenebilir",
+      "m3": "Ödeme dönemine göre ayarlanır; düzenlenebilir",
+      "m6": "Ödeme dönemine göre ayarlanır; düzenlenebilir",
+      "m12": "Ödeme dönemine göre ayarlanır; düzenlenebilir",
+      "custom": "Ödeme dönemine göre ayarlanır; düzenlenebilir"
+    },
+    "receivedOn": "Alınma tarihi",
+    "note": "Not",
+    "notePh": "İsteğe bağlı, ör. USDT transferi",
+    "record": "Kaydet",
+    "recordBtn": {
+      "m1": "Ödemeyi kaydet ({fee}/ay)",
+      "m3": "Ödemeyi kaydet ({fee}/çeyrek)",
+      "m6": "Ödemeyi kaydet (6 ayda bir {fee})",
+      "m12": "Ödemeyi kaydet ({fee}/yıl)",
+      "custom": {
+        "one": "Ödemeyi kaydet ({count} ayda bir {fee})",
+        "other": "Ödemeyi kaydet ({count} ayda bir {fee})"
+      }
+    },
+    "firstPeriod": "İlk dönem",
+    "firstAmount": "İlk dönem tutarı",
+    "firstMode": {
+      "prorate": "Günlük orantılı",
+      "full": "Tam dönem",
+      "free": "İlk dönem ücretsiz"
+    },
+    "collectionSchedule": "Tahsilat tarihleri: her yıl {dates}",
+    "coverAligned": "Ortak dönem sınırında sona erer",
+    "recordNext": "Ödeme kaydet\n{amount}",
+    "collectionAnchor": "Ortak tahsilat başlangıcı",
+    "firstSummary": "İlk dönem {from}–{until}\n{mode} {amount}",
+    "accountEmpty": "Hesap girilmedi",
+    "editAccount": "Üye hesabını düzenle",
+    "copyAccount": "Hesabı kopyala",
+    "toastPayEdited": "Ödeme güncellendi",
+    "editPayAria": "Bu ödemeyi düzenle"
+  },
+  "pool": {
+    "seatsFree": "{count} boş",
+    "seatsFull": "Dolu",
+    "filter": {
+      "all": "Tümü",
+      "live": "Devam eden",
+      "owe": "Alacak",
+      "settled": "Kapanan",
+      "ended": "Biten",
+      "none": "Eşleşen ortak plan yok"
+    },
+    "title": "Ortak planlar",
+    "netGain": "Yıllık net kazanç",
+    "netCost": "Yıllık net maliyet",
+    "yearIncome": "Üyeler yılda {amount} ödüyor",
+    "owed": "Tahsil edilecek",
+    "owedSub": {
+      "one": "{count} üye ödemedi",
+      "other": "{count} üye ödemedi"
+    },
+    "count": "Planlar",
+    "countStarted": " yönetilen\n",
+    "countJoined": " katılınan",
+    "countSub": "Yönetilen\nKatılınan",
+    "emptyTitle": "Henüz ortak plan yok",
+    "emptyBody": "Abonelik düzenleyicisinde “Kim kullanıyor” altında “Yönetici benim” seçeneğini seçin, ardından üyeleri ve paylarını ekleyin.",
+    "next": "sonraki {date}",
+    "me": "Ben",
+    "exemptTitle": "{name} (ödemiyor)",
+    "addMember": "Üye ekle",
+    "owedN": {
+      "one": "{count} tahsilat",
+      "other": "{count} tahsilat"
+    },
+    "settled": "Ödeşildi",
+    "noMembers": "Henüz üye yok",
+    "addMemberSeats": {
+      "one": "Üye ekle ({count} yer boş)",
+      "other": "Üye ekle ({count} yer boş)"
+    },
+    "unnamed": "Adsız",
+    "leftOn": "{date} ayrıldı",
+    "exemptNote": "Yer tutuyor, ödemiyor",
+    "paidUntil": "{date} tarihine kadar ödendi",
+    "noPay": "Henüz ödeme yok",
+    "paymentsN": {
+      "one": "{count} ödeme",
+      "other": "{count} ödeme"
+    },
+    "from": "kaynak: {source}",
+    "exempt": "Ödemiyor",
+    "owedAmount": "{amount} borç",
+    "perFee": {
+      "m1": "{fee}/ay",
+      "m3": "{fee}/çeyrek",
+      "m6": "6 ayda bir {fee}",
+      "m12": "{fee}/yıl",
+      "custom": {
+        "one": "{count} ayda bir {fee}",
+        "other": "{count} ayda bir {fee}"
+      }
+    },
+    "collect": "Tahsil et",
+    "joinedGroup": "Katıldığım planlar",
+    "payTo": "Ödenen: {name}\n{amount}",
+    "ownerDefault": "yönetici",
+    "maybeGroup": "Ortak olabilir",
+    "convert": "Ortak yap",
+    "dueOn": "Vade {date}",
+    "nextDueOn": "Sonraki {date}"
+  },
+  "convert": {
+    "title": "“{name}” ortak yapılsın",
+    "cancel": "Vazgeç",
+    "submit": "Ortak yap",
+    "toastOwner": "Plan artık ortak; sırada üyeleri eklemek var",
+    "toastMember": "Katıldım olarak işaretlendi",
+    "roleOwner": "Yönetici benim",
+    "roleMember": "Katıldım",
+    "footOwner": "{count} kişiye bölünür, dönem başına kişi başı yaklaşık {amount}. Üye ekledikçe payınız otomatik olarak azalır.",
+    "footMember": "Katıldıktan sonra fiyat, her dönem yöneticiye ödediğiniz tutardır.",
+    "seats": "Toplam kişi (siz dahil)",
+    "owner": "Yönetici",
+    "ownerPh": "Kime ödüyorsunuz"
+  },
+  "facts": {
+    "cost": "Maliyet / yıl",
+    "income": "Gelir / yıl",
+    "loss": "Zarar / yıl",
+    "profit": "Kâr / yıl",
+    "since": "{month} itibarıyla",
+    "actual": "Ödenen {paid}\nAlınan {received}\n{result}",
+    "gain": "{amount} kârda",
+    "lost": "{amount} zararda",
+    "noRecords": "Henüz ödeme yok",
+    "yearCost": "Yıllık maliyet",
+    "yearIncome": "Yıllık gelir"
+  },
+  "collect": {
+    "title": "Ödeme kaydet\n{name}",
+    "next": "Sonraki tahsilat {date}",
+    "editMember": "Düzenle",
+    "until": "Kapsadığı son tarih",
+    "covers": "Ödeme {from} – {until} dönemini kapsar",
+    "changeFee": "Ücreti değiştir",
+    "lastPayment": "Son ödeme",
+    "adjustFee": "Ücreti ayarla",
+    "feeFrom": "Geçerlilik tarihi",
+    "feeHelp": "Kapsam başlangıcındaki tarife tüm dönem için geçerlidir. Kayıtlı ödemeler değişmez.",
+    "viewSub": "Ayrıntıları gör",
+    "editTitle": "Ödemeyi düzenle\n{name}"
+  },
+  "rule": {
+    "title": "Ücret",
+    "follow": "Planı izle",
+    "custom": "Özel",
+    "followValue": "{rule} (plan kuralı)",
+    "sheetTitle": "Ücret",
+    "from": "Geçerlilik",
+    "anchor": "Ortak tahsilat günü",
+    "applyNote": "Planı izleyen {count} üye bu tarihten itibaren yeni kurala geçer; özel üyeler ve geçmiş tahsilatlar değişmez."
+  },
+  "quick": {
+    "more": "Diğer bilgiler",
+    "paid": "Ödendiği tarih",
+    "paidFrom": "Dönem başlangıcı",
+    "paidTo": "Dönem sonu",
+    "late": {
+      "one": "{count} gün gecikti",
+      "other": "{count} gün gecikti"
+    },
+    "owe": "{amount} bekliyor\n{date} tarihinden beri",
+    "settled": "Ödendi\nsonraki {date}"
+  },
+  "strip": {
+    "yearNet": "Yıllık net",
+    "costIncome": "Maliyet {cost}\nGelir {income}",
+    "noneOwed": "Borcu olan yok",
+    "since": "{date} itibarıyla",
+    "profit": "Kâr / zarar",
+    "annualApprox": "Yılda yaklaşık {amount}",
+    "paid": "Ödenen",
+    "received": "Alınan"
+  },
+  "timeline": {
+    "paid": "Ödendi",
+    "due": "Bekleyen",
+    "future": "Sonraki dönem",
+    "unused": "Ödendi, kullanılmadı"
+  },
+  "refund": {
+    "title": "Ayrılma iadesi",
+    "none": "İade yok",
+    "unused": "Kullanılmayanı iade et",
+    "date": "İade tarihi"
+  },
+  "sort": {
+    "owed": "Alacak",
+    "net": "Yıllık net",
+    "received": "Toplam alınan",
+    "lastPaid": "Son ödeme"
+  }
+}

@@ -1,0 +1,147 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import './shadcn.css';
+@import '../control-sizes.css';
+
+@custom-variant dark (&:is([data-theme='dark'] *));
+
+@import '../design-tokens.css';
+
+:root {
+  --radius: var(--radius-md);
+  --background: var(--bg);
+  --foreground: var(--label);
+  --card-foreground: var(--label);
+  --popover: var(--card);
+  --popover-foreground: var(--label);
+  --primary: var(--ink);
+  --primary-foreground: var(--on-ink);
+  --secondary: var(--gray-3);
+  --secondary-foreground: var(--label);
+  --muted: var(--gray-3);
+  --muted-foreground: var(--gray-11);
+  --accent: var(--indigo-3);
+  --accent-foreground: var(--indigo-11);
+  --destructive: var(--red);
+  --border: var(--line);
+  --input: var(--gray-7);
+  --ring: var(--focus-ring);
+  /* shadcn 图表的黑灰五级，深色主题随 gray 色阶自动反转 */
+  --chart-1: var(--gray-12);
+  --chart-2: var(--gray-11);
+  --chart-3: var(--gray-9);
+  --chart-4: var(--gray-8);
+  --chart-5: var(--gray-6);
+  --up: var(--red);
+  --down: var(--green);
+  --surface: var(--gray-1);
+}
+
+@theme inline {
+  --color-white: var(--white-a12);
+  --color-black: var(--black-a12);
+  --text-xs: var(--fs-1);
+  --text-sm: var(--fs-2);
+  --text-base: var(--fs-2);
+  --text-lg: var(--fs-3);
+  --text-xl: var(--fs-3);
+  --text-2xl: var(--fs-4);
+  --text-3xl: var(--fs-4);
+  --text-4xl: var(--fs-4);
+  --text-5xl: var(--fs-4);
+  --text-6xl: var(--fs-4);
+  --default-transition-duration: var(--duration);
+  --default-transition-timing-function: var(--ease);
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 14px;
+  --font-sans: 'Geist', 'PingFang SC', 'Hiragino Sans GB', system-ui, sans-serif;
+  --font-mono: 'Geist Mono', ui-monospace, monospace;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-up: var(--up);
+  --color-down: var(--down);
+  --color-surface: var(--surface);
+}
+
+@layer base {
+  /* 隐藏所有滚动条，保留滚动 */
+  * {
+    scrollbar-width: none;
+  }
+  *::-webkit-scrollbar {
+    display: none;
+  }
+  * {
+    @apply border-border;
+    border-width: 0;
+  }
+  html {
+    color-scheme: light;
+  }
+  html[data-theme='dark'] {
+    color-scheme: dark;
+  }
+  body {
+    @apply bg-surface font-sans text-foreground antialiased;
+    font-size: var(--fs-2);
+    font-feature-settings: 'ss01';
+  }
+  .tnum {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.public-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: var(--ctl-h-md);
+  height: var(--ctl-h-md);
+  border: 0;
+  border-radius: var(--radius-pill);
+  color: var(--muted-foreground);
+  background: transparent;
+}
+.public-icon-btn:hover {
+  background: var(--muted);
+  color: var(--foreground);
+}
+.public-icon-btn:focus-visible {
+  outline: var(--hairline) solid var(--focus-ring);
+  outline-offset: 3px;
+}
+.public-icon-btn:disabled {
+  opacity: 0.45;
+}
+
+/* Public tabs and their neighboring icon actions share the outer frame. */
+[data-slot='tabs-list'][data-orientation='horizontal'] {
+  height: var(--ctl-h-md);
+}
+.public-filter-btn {
+  height: var(--ctl-h-sm);
+}

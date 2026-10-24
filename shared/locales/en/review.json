@@ -1,0 +1,78 @@
+{
+  "title": "Share annual review",
+  "fileName": "subscriptions-{year}-in-review-{style}.png",
+  "style": {
+    "poster": "Poster",
+    "receipt": "Receipt",
+    "card": "Card",
+    "stars": "Spending map"
+  },
+  "unassigned": "Unassigned",
+  "me": "Me",
+  "whose": "{name}'s",
+  "whoseSelf": "My",
+  "topSpend": "Highest spending",
+  "ofYear": "{pct} of annual spending",
+  "n": {
+    "subs": {
+      "one": "{count} subscription",
+      "other": "{count} subscriptions"
+    },
+    "charges": {
+      "one": "{count} charge",
+      "other": "{count} charges"
+    },
+    "currencies": {
+      "one": "{count} currency",
+      "other": "{count} currencies"
+    }
+  },
+  "receipt": {
+    "shop": "{whose} subscription ledger",
+    "asOf": "Annual statement\nAs of {date}",
+    "fullYear": "{year} annual statement",
+    "no": "No. {no}",
+    "item": "Item",
+    "share": "Share",
+    "amount": "Amount",
+    "rest": "{count} more",
+    "count": "Items {items} / Charges {charges}",
+    "total": "TOTAL"
+  },
+  "poster": {
+    "kicker": "{whose} subscription review",
+    "ongoing": "{subs}\n{charges}",
+    "ongoingHidden": "{charges}\n{currencies}",
+    "year": "{subs}\n{charges}",
+    "yearHidden": "{charges}\n{currencies}",
+    "newEnded": "{added} added\n{ended} ended",
+    "perDay": "{amount}/day on average"
+  },
+  "card": {
+    "head": "{whose} subscriptions",
+    "intro": {
+      "ongoing": "Spending to date",
+      "ongoingHidden": "Subscriptions to date",
+      "year": "Annual spending",
+      "yearHidden": "Subscriptions this year"
+    },
+    "perDay": "{amount}/day on average",
+    "longest": "Longest subscription",
+    "duration": "{y} yr {m} mo",
+    "busiest": "Highest-spending month",
+    "month": "{month}",
+    "newEnded": "Added / ended",
+    "saved": "Saved {amount}",
+    "ended": "{count} ended",
+    "noneEnded": "None ended",
+    "currencies": "Currencies used",
+    "currencyCount": "{count}",
+    "nowMonthly": "Current monthly cost {amount}"
+  },
+  "stars": {
+    "head": "{year}\n{whose} subscription spending",
+    "foot": "Circle size represents spending"
+  },
+  "spendBasis": "Full amount paid, including advances for members",
+  "stopLoss": "Unrefunded loss this year: {amount}"
+}

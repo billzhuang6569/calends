@@ -1,0 +1,74 @@
+{
+  "title": "{name}'s subscriptions",
+  "loadFailed": "Couldn't load",
+  "theme": {
+    "title": "Theme: {mode} (click to switch)",
+    "aria": "Theme: {mode}, click to switch"
+  },
+  "currency": "Display currency",
+  "hero": {
+    "monthly": "Monthly subscription spending",
+    "flat": "Same as this month last year",
+    "more": "{amount} more than this month last year",
+    "less": "{amount} less than this month last year",
+    "yearly": "Per year",
+    "live": "Active",
+    "paid": "Paid since {year}"
+  },
+  "timeline": {
+    "title": "Timeline",
+    "upcoming": {
+      "one": "{count} charge in the next 30 days\n{amount}",
+      "other": "{count} charges in the next 30 days\n{amount}"
+    }
+  },
+  "chart": {
+    "title": "Monthly charges",
+    "desc": "Past 12 months and next 3; dashed bars are projected",
+    "paid": "Paid",
+    "mrr": "Monthly cost",
+    "charge": "Charged",
+    "thisMonth": "This month",
+    "projected": "{month}\nProjected"
+  },
+  "ended": {
+    "title": "Cancelled",
+    "saved": "{amount} less per month since cancelling"
+  },
+  "perMonth": "{amount}/mo",
+  "lifetime": {
+    "title": "Lifetime",
+    "desc": "Paid once, no more charges"
+  },
+  "composition": {
+    "title": "Breakdown",
+    "desc": "Monthly cost by category",
+    "other": "Other"
+  },
+  "count": "{count}",
+  "fx": {
+    "title": "Exchange rates",
+    "flat": "Exchange rates have barely changed costs over the past year",
+    "less": "At today's rates you pay {amount} less a month than a year ago",
+    "more": "At today's rates you pay {amount} more a month than a year ago",
+    "share": "{pct}%"
+  },
+  "list": {
+    "title": "Subscriptions",
+    "summary": {
+      "one": "{count}\n{amount}/mo",
+      "other": "{count}\n{amount}/mo"
+    },
+    "all": "All"
+  },
+  "row": {
+    "ends": "\nEnds {date}",
+    "renews": "\nRenews {date}",
+    "monthly": "Monthly",
+    "perMonthEq": "Per month"
+  },
+  "titleAnon": "Subscriptions",
+  "pile": {
+    "label": "Your subscriptions, piled up — bigger icons cost more"
+  }
+}

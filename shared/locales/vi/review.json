@@ -1,0 +1,75 @@
+{
+  "title": "Chia sẻ tổng kết năm",
+  "fileName": "goi-dang-ky-{year}-tong-ket-{style}.png",
+  "style": {
+    "poster": "Áp phích",
+    "receipt": "Hóa đơn",
+    "card": "Thẻ",
+    "stars": "Phân bố chi tiêu"
+  },
+  "unassigned": "Chưa gán",
+  "me": "Tôi",
+  "whose": "{name}",
+  "whoseSelf": "tôi",
+  "topSpend": "Chi tiêu cao nhất",
+  "ofYear": "{pct} chi tiêu cả năm",
+  "n": {
+    "subs": {
+      "other": "{count} gói đăng ký"
+    },
+    "charges": {
+      "other": "{count} khoản phí"
+    },
+    "currencies": {
+      "other": "{count} loại tiền tệ"
+    }
+  },
+  "receipt": {
+    "shop": "Sổ theo dõi gói đăng ký của {whose}",
+    "asOf": "Tổng kết năm\nĐến {date}",
+    "fullYear": "Tổng kết năm {year}",
+    "no": "Số {no}",
+    "item": "Mục",
+    "share": "Phần",
+    "amount": "Số tiền",
+    "rest": "{count} mục khác",
+    "count": "Mục {items} / Khoản phí {charges}",
+    "total": "TỔNG"
+  },
+  "poster": {
+    "kicker": "Tổng kết gói đăng ký của {whose}",
+    "ongoing": "{subs}\n{charges}",
+    "ongoingHidden": "{charges}\n{currencies}",
+    "year": "{subs}\n{charges}",
+    "yearHidden": "{charges}\n{currencies}",
+    "newEnded": "Thêm {added}\nKết thúc {ended}",
+    "perDay": "Trung bình {amount}/ngày"
+  },
+  "card": {
+    "head": "Gói đăng ký của {whose}",
+    "intro": {
+      "ongoing": "Chi tiêu từ đầu năm",
+      "ongoingHidden": "Số gói đăng ký từ đầu năm",
+      "year": "Chi tiêu cả năm",
+      "yearHidden": "Số gói đăng ký trong năm"
+    },
+    "perDay": "Trung bình {amount}/ngày",
+    "longest": "Gói đăng ký lâu nhất",
+    "duration": "{y} năm {m} tháng",
+    "busiest": "Tháng chi tiêu nhiều nhất",
+    "month": "{month}",
+    "newEnded": "Thêm / kết thúc",
+    "saved": "Tiết kiệm {amount}",
+    "ended": "{count} đã kết thúc",
+    "noneEnded": "Chưa có đăng ký kết thúc",
+    "currencies": "Tiền tệ đã dùng",
+    "currencyCount": "{count}",
+    "nowMonthly": "Chi phí tháng hiện tại {amount}"
+  },
+  "stars": {
+    "head": "{year}\nChi tiêu đăng ký của {whose}",
+    "foot": "Kích thước vòng tròn thể hiện chi tiêu"
+  },
+  "spendBasis": "Toàn bộ số tiền đã trả, gồm khoản ứng trước cho thành viên",
+  "stopLoss": "Tổn thất chưa hoàn tiền năm nay: {amount}"
+}

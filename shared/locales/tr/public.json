@@ -1,0 +1,74 @@
+{
+  "title": "{name}\nAbonelikler",
+  "loadFailed": "Yüklenemedi",
+  "theme": {
+    "title": "Tema: {mode} (değiştirmek için tıklayın)",
+    "aria": "Tema: {mode}, değiştirmek için tıklayın"
+  },
+  "currency": "Görüntüleme para birimi",
+  "hero": {
+    "monthly": "Aylık abonelik harcaması",
+    "flat": "Geçen yılın aynı ayıyla aynı",
+    "more": "Geçen yılın aynı ayından {amount} fazla",
+    "less": "Geçen yılın aynı ayından {amount} az",
+    "yearly": "Yıllık",
+    "live": "Etkin",
+    "paid": "{year} yılından beri ödenen"
+  },
+  "timeline": {
+    "title": "Zaman çizelgesi",
+    "upcoming": {
+      "one": "Önümüzdeki 30 günde {count} ödeme\n{amount}",
+      "other": "Önümüzdeki 30 günde {count} ödeme\n{amount}"
+    }
+  },
+  "chart": {
+    "title": "Aylık ödemeler",
+    "desc": "Son 12 ay ve sonraki 3 ay; kesikli çubuklar tahmindir",
+    "paid": "Ödenen",
+    "mrr": "Aylık maliyet",
+    "charge": "Ödenen tutar",
+    "thisMonth": "Bu ay",
+    "projected": "{month}\nTahmini"
+  },
+  "ended": {
+    "title": "İptal edilenler",
+    "saved": "İptalden beri ayda {amount} daha az"
+  },
+  "perMonth": "{amount}/ay",
+  "lifetime": {
+    "title": "Ömür boyu",
+    "desc": "Bir kez ödendi, başka ödeme yok"
+  },
+  "composition": {
+    "title": "Dağılım",
+    "desc": "Kategoriye göre aylık maliyet",
+    "other": "Diğer"
+  },
+  "count": "{count}",
+  "fx": {
+    "title": "Döviz kurları",
+    "flat": "Kurlar son bir yılda maliyetleri neredeyse hiç değiştirmedi",
+    "less": "Bugünkü kurlarla bir yıl öncesine göre ayda {amount} daha az ödüyorsunuz",
+    "more": "Bugünkü kurlarla bir yıl öncesine göre ayda {amount} daha fazla ödüyorsunuz",
+    "share": "%{pct}"
+  },
+  "list": {
+    "title": "Abonelikler",
+    "summary": {
+      "one": "{count}\n{amount}/ay",
+      "other": "{count}\n{amount}/ay"
+    },
+    "all": "Tümü"
+  },
+  "row": {
+    "ends": "\nBitiş {date}",
+    "renews": "\n{date} yenilenir",
+    "monthly": "Aylık",
+    "perMonthEq": "Aylık karşılığı"
+  },
+  "titleAnon": "Abonelikler",
+  "pile": {
+    "label": "Abonelik yığını: simge büyüdükçe aylık maliyet artar"
+  }
+}

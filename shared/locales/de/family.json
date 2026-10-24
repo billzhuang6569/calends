@@ -1,0 +1,330 @@
+{
+  "sheet": {
+    "paidOut": "Bezahlt {amount}",
+    "receiptHint": "Wenn jemand zahlt, tippe neben dem Mitglied auf „Kassieren“",
+    "tabIn": "Erhalten {count}",
+    "tabOut": "Bezahlt {count}",
+    "chargeDate": "Abgebucht am",
+    "refund": "Erstattung",
+    "noCharges": "Noch keine Abbuchungen",
+    "people": "{count} Personen",
+    "title": "Geteilter Plan",
+    "seats": "Plätze",
+    "seatsVal": "{used}/{total}",
+    "since": "Gestartet",
+    "members": "Mitglieder",
+    "receipts": "Erhaltene Zahlungen",
+    "receiptsSum": "{count}\n{amount}",
+    "date": "Datum",
+    "member": "Mitglied",
+    "covers": "Zeitraum",
+    "amount": "Betrag",
+    "expandAll": "Alle aufklappen",
+    "collapseAll": "Alle zuklappen",
+    "groupSum": {
+      "one": "{count} Zahlung\n{amount}",
+      "other": "{count} Zahlungen\n{amount}"
+    },
+    "fee": "Gebühr",
+    "nextCollection": "Nächster Einzug",
+    "actions": "Aktionen",
+    "status": "Zahlungsstatus",
+    "period": "Aktueller Zeitraum",
+    "range": "{from} – {until}",
+    "rangeFrom": "Von",
+    "rangeTo": "Bis",
+    "showAllPeriods": "Alle {count} Zeiträume anzeigen",
+    "vacancy": "Freier Platz",
+    "departed": "{count} ausgeschieden",
+    "hidePersonal": "Persönliche Daten ausblenden",
+    "showPersonal": "Persönliche Daten anzeigen",
+    "hiddenMember": "Verstecktes Mitglied",
+    "addMember": "Mitglied hinzufügen",
+    "vacancyTrack": "Derzeit frei",
+    "copyFailed": "Bild konnte nicht kopiert werden",
+    "ownerFee": "Organisator"
+  },
+  "contact": {
+    "via": {
+      "wechat": "WeChat",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "other": "Sonstiges"
+    },
+    "hint": {
+      "wechat": "WeChat-ID",
+      "discord": "Benutzername",
+      "generic": "Konto / ID"
+    },
+    "viaAria": "Kontaktweg",
+    "open": "{via} öffnen"
+  },
+  "member": {
+    "defaultName": "Mitglied",
+    "unnamed": "Ohne Namen",
+    "toastPaid": "{amount} von {name} erfasst",
+    "paymentRemoved": "Zahlung gelöscht",
+    "copied": {
+      "one": "Für {count} Mitglied kopiert",
+      "other": "Für {count} Mitglieder kopiert"
+    },
+    "titleNew": "Mitglied hinzufügen\n{name}",
+    "confirmDelete": "„{name}“ endgültig löschen? Der Zahlungsverlauf wird ebenfalls gelöscht und deine erfassten Einnahmen sinken.\nFalls die Person nur ausgestiegen ist, trag stattdessen ein Austrittsdatum ein.",
+    "deleted": "Gelöscht",
+    "delete": "Löschen",
+    "cancel": "Abbrechen",
+    "added": "Mitglied hinzugefügt",
+    "saved": "Gesichert",
+    "add": "Hinzufügen",
+    "save": "Sichern",
+    "group": "Mitglied",
+    "name": "Name",
+    "namePh": "Wie du die Person nennst",
+    "contact": "Kontakt",
+    "account": "Mitgliedskonto",
+    "accountPh": "E-Mail, Telefon, Benutzername oder ID bei {name}",
+    "joined": "Beigetreten",
+    "joinedPh": "Abo-Beginn ({date})",
+    "notSet": "Nicht festgelegt",
+    "left": "Ausgetreten",
+    "leftPh": "Noch dabei",
+    "feeGroup": "Gebühr",
+    "seg": {
+      "m1": "Monatlich",
+      "m3": "Vierteljährlich",
+      "m6": "6 Monate",
+      "m12": "Jährlich"
+    },
+    "feeLabel": {
+      "m1": "Pro Monat",
+      "m3": "Pro Quartal",
+      "m6": "Pro Halbjahr",
+      "m12": "Pro Jahr",
+      "custom": {
+        "one": "Jeden Monat",
+        "other": "Alle {count} Monate"
+      }
+    },
+    "feeCcyAria": "Währung",
+    "exempt": "Zahlt nicht",
+    "other": "Sonstiges",
+    "source": "Herkunft",
+    "sourcePh": "Welche Gruppe / wer hat vermittelt",
+    "payments": "Zahlungen\n{count}",
+    "receivedTotal": "Insgesamt etwa {amount} erhalten",
+    "paidUntil": "Bezahlt bis",
+    "paidUntilPh": "Noch keine Zahlungen",
+    "payCover": "Erhalten am {date}\ndeckt {from}–{until}",
+    "payCoverTo": "Erhalten am {date}\ndeckt bis {until}",
+    "copyAria": "Für andere Mitglieder kopieren",
+    "removePayAria": "Zahlung löschen",
+    "dup": "Bereits erfasst",
+    "paidUntilDate": "Bezahlt bis {date}",
+    "noPay": "Noch keine Zahlungen",
+    "copyN": "Für {count} kopieren",
+    "amount": "Betrag",
+    "currency": "Währung",
+    "coverFrom": "Deckt ab",
+    "coverTo": "Deckt bis",
+    "coverAuto": {
+      "m1": "Aus dem Abrechnungszeitraum; änderbar",
+      "m3": "Aus dem Abrechnungszeitraum; änderbar",
+      "m6": "Aus dem Abrechnungszeitraum; änderbar",
+      "m12": "Aus dem Abrechnungszeitraum; änderbar",
+      "custom": "Aus dem Abrechnungszeitraum; änderbar"
+    },
+    "receivedOn": "Erhalten am",
+    "note": "Notiz",
+    "notePh": "Optional, z. B. USDT-Überweisung",
+    "record": "Erfassen",
+    "recordBtn": {
+      "m1": "Zahlung erfassen ({fee}/Mon.)",
+      "m3": "Zahlung erfassen ({fee}/Quartal)",
+      "m6": "Zahlung erfassen ({fee} pro Halbjahr)",
+      "m12": "Zahlung erfassen ({fee}/Jahr)",
+      "custom": {
+        "one": "Zahlung erfassen ({fee} jeden {count}. Monat)",
+        "other": "Zahlung erfassen ({fee} alle {count} Monate)"
+      }
+    },
+    "firstPeriod": "Erster Zeitraum",
+    "firstAmount": "Betrag im ersten Zeitraum",
+    "firstMode": {
+      "prorate": "Tageweise anteilig",
+      "full": "Voller Zeitraum",
+      "free": "Erster Zeitraum kostenlos"
+    },
+    "collectionSchedule": "Einzugstermine: jährlich {dates}",
+    "coverAligned": "Endet an der gemeinsamen Zeitraumgrenze",
+    "recordNext": "Zahlung erfassen\n{amount}",
+    "collectionAnchor": "Gemeinsamer Einzugsbeginn",
+    "firstSummary": "Erster Zeitraum {from}–{until}\n{mode} {amount}",
+    "accountEmpty": "Kein Konto eingetragen",
+    "editAccount": "Mitgliedskonto bearbeiten",
+    "copyAccount": "Konto kopieren",
+    "toastPayEdited": "Zahlung aktualisiert",
+    "editPayAria": "Diese Zahlung bearbeiten"
+  },
+  "pool": {
+    "seatsFree": "{count} frei",
+    "seatsFull": "Voll",
+    "filter": {
+      "all": "Alle",
+      "live": "Aktiv",
+      "owe": "Offen",
+      "settled": "Beglichen",
+      "ended": "Beendet",
+      "none": "Keine passenden Gruppen"
+    },
+    "title": "Geteilte Abos",
+    "netGain": "Nettogewinn pro Jahr",
+    "netCost": "Nettokosten pro Jahr",
+    "yearIncome": "Mitglieder zahlen {amount}/Jahr",
+    "owed": "Einzufordern",
+    "owedSub": {
+      "one": "{count} Mitglied hat nicht bezahlt",
+      "other": "{count} Mitglieder haben nicht bezahlt"
+    },
+    "count": "Abos",
+    "countStarted": " organisiert\n",
+    "countJoined": " beigetreten",
+    "countSub": "Organisiert\nBeigetreten",
+    "emptyTitle": "Noch keine geteilten Abos",
+    "emptyBody": "Wähle im Abo-Editor unter „Wer es nutzt“ die Option „Ich organisiere“ und füge Mitglieder und ihre Anteile hinzu.",
+    "next": "nächste am {date}",
+    "me": "Ich",
+    "exemptTitle": "{name} (zahlt nicht)",
+    "addMember": "Mitglied hinzufügen",
+    "owedN": {
+      "one": "{count} einzufordern",
+      "other": "{count} einzufordern"
+    },
+    "settled": "Beglichen",
+    "noMembers": "Noch keine Mitglieder",
+    "addMemberSeats": {
+      "one": "Mitglied hinzufügen ({count} Platz frei)",
+      "other": "Mitglied hinzufügen ({count} Plätze frei)"
+    },
+    "unnamed": "Ohne Namen",
+    "leftOn": "Ausgetreten am {date}",
+    "exemptNote": "Belegt einen Platz, zahlt nicht",
+    "paidUntil": "Bezahlt bis {date}",
+    "noPay": "Noch keine Zahlungen",
+    "paymentsN": {
+      "one": "{count} Zahlung",
+      "other": "{count} Zahlungen"
+    },
+    "from": "über {source}",
+    "exempt": "Zahlt nicht",
+    "owedAmount": "{amount} offen",
+    "perFee": {
+      "m1": "{fee}/Mon.",
+      "m3": "{fee}/Quartal",
+      "m6": "{fee} pro Halbjahr",
+      "m12": "{fee}/Jahr",
+      "custom": {
+        "one": "{fee} jeden {count}. Monat",
+        "other": "{fee} alle {count} Monate"
+      }
+    },
+    "collect": "Einfordern",
+    "joinedGroup": "Abos, bei denen ich dabei bin",
+    "payTo": "An {name} gezahlt\n{amount}",
+    "ownerDefault": "Organisator",
+    "maybeGroup": "Evtl. geteilt",
+    "convert": "Als geteilt markieren",
+    "dueOn": "Fällig {date}",
+    "nextDueOn": "Nächste Fälligkeit {date}"
+  },
+  "convert": {
+    "title": "„{name}“ teilen",
+    "cancel": "Abbrechen",
+    "submit": "Als geteilt markieren",
+    "toastOwner": "Abo ist jetzt geteilt – füge als Nächstes Mitglieder hinzu",
+    "toastMember": "Als beigetreten markiert",
+    "roleOwner": "Ich organisiere",
+    "roleMember": "Ich bin dabei",
+    "footOwner": "Durch {count} geteilt, etwa {amount} pro Person und Zeitraum. Weitere Mitglieder senken deinen Anteil automatisch.",
+    "footMember": "Als Mitglied ist der Preis das, was du dem Organisator pro Zeitraum zahlst.",
+    "seats": "Plätze gesamt (inkl. dir)",
+    "owner": "Organisator",
+    "ownerPh": "An wen du zahlst"
+  },
+  "facts": {
+    "cost": "Kosten / Jahr",
+    "income": "Einnahmen / Jahr",
+    "loss": "Verlust / Jahr",
+    "profit": "Gewinn / Jahr",
+    "since": "Seit {month}",
+    "actual": "Gezahlt {paid}\nErhalten {received}\n{result}",
+    "gain": "Plus {amount}",
+    "lost": "Minus {amount}",
+    "noRecords": "Noch keine Zahlungen",
+    "yearCost": "Kosten pro Jahr",
+    "yearIncome": "Einnahmen pro Jahr"
+  },
+  "collect": {
+    "title": "Zahlung erfassen\n{name}",
+    "next": "Nächste Einnahme {date}",
+    "editMember": "Bearbeiten",
+    "until": "Gedeckt bis",
+    "covers": "Zahlung deckt {from} – {until}",
+    "changeFee": "Gebühr ändern",
+    "lastPayment": "Letzte Zahlung",
+    "adjustFee": "Gebühr anpassen",
+    "feeFrom": "Gültig ab",
+    "feeHelp": "Der Beginn des abgedeckten Zeitraums bestimmt den Tarif für den gesamten Zeitraum. Gespeicherte Zahlungen bleiben unverändert.",
+    "viewSub": "Details ansehen",
+    "editTitle": "Zahlung bearbeiten\n{name}"
+  },
+  "rule": {
+    "title": "Gebühr",
+    "follow": "Wie Abo",
+    "custom": "Eigen",
+    "followValue": "{rule} (Abo-Regel)",
+    "sheetTitle": "Gebühr",
+    "from": "Gültig ab",
+    "anchor": "Einzugsstichtag",
+    "applyNote": "{count} Mitglieder mit Abo-Regel wechseln ab dem Stichtag; eigene Regeln und frühere Zahlungen bleiben unverändert."
+  },
+  "quick": {
+    "more": "Weitere Angaben",
+    "paid": "Bezahlt bis",
+    "paidFrom": "Zeitraum ab",
+    "paidTo": "Zeitraum bis",
+    "late": {
+      "one": "{count} Tag überfällig",
+      "other": "{count} Tage überfällig"
+    },
+    "owe": "{amount} offen\nseit {date}",
+    "settled": "Beglichen\nnächste Fälligkeit {date}"
+  },
+  "strip": {
+    "yearNet": "Netto pro Jahr",
+    "costIncome": "Kosten {cost}\nEinnahmen {income}",
+    "noneOwed": "Niemand im Rückstand",
+    "since": "Seit {date}",
+    "profit": "Gewinn / Verlust",
+    "annualApprox": "Etwa {amount} pro Jahr",
+    "paid": "Gezahlt",
+    "received": "Erhalten"
+  },
+  "timeline": {
+    "paid": "Bezahlt",
+    "due": "Offen",
+    "future": "Nächster Zeitraum",
+    "unused": "Bezahlt, ungenutzt"
+  },
+  "refund": {
+    "title": "Erstattung beim Austritt",
+    "none": "Keine Erstattung",
+    "unused": "Ungenutztes erstatten",
+    "date": "Erstattungsdatum"
+  },
+  "sort": {
+    "owed": "Offener Betrag",
+    "net": "Jährlicher Saldo",
+    "received": "Bisher erhalten",
+    "lastPaid": "Letzte Zahlung"
+  }
+}

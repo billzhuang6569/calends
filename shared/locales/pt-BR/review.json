@@ -1,0 +1,78 @@
+{
+  "title": "Compartilhar resumo anual",
+  "fileName": "assinaturas-retrospectiva-{year}-{style}.png",
+  "style": {
+    "poster": "Pôster",
+    "receipt": "Recibo",
+    "card": "Cartão",
+    "stars": "Distribuição dos gastos"
+  },
+  "unassigned": "Sem atribuição",
+  "me": "Eu",
+  "whose": "de {name}",
+  "whoseSelf": "pessoais",
+  "topSpend": "Maior gasto",
+  "ofYear": "{pct} dos gastos anuais",
+  "n": {
+    "subs": {
+      "one": "{count} assinatura",
+      "other": "{count} assinaturas"
+    },
+    "charges": {
+      "one": "{count} cobrança",
+      "other": "{count} cobranças"
+    },
+    "currencies": {
+      "one": "{count} moeda",
+      "other": "{count} moedas"
+    }
+  },
+  "receipt": {
+    "shop": "Assinaturas {whose}",
+    "asOf": "Resumo anual\nAté {date}",
+    "fullYear": "Resumo anual de {year}",
+    "no": "Nº {no}",
+    "item": "Item",
+    "share": "Parte",
+    "amount": "Valor",
+    "rest": "Mais {count}",
+    "count": "Itens {items} / Cobranças {charges}",
+    "total": "TOTAL"
+  },
+  "poster": {
+    "kicker": "Resumo de assinaturas {whose}",
+    "ongoing": "{subs}\n{charges}",
+    "ongoingHidden": "{charges}\n{currencies}",
+    "year": "{subs}\n{charges}",
+    "yearHidden": "{charges}\n{currencies}",
+    "newEnded": "Novas: {added}\nEncerradas: {ended}",
+    "perDay": "{amount}/dia em média"
+  },
+  "card": {
+    "head": "Assinaturas {whose}",
+    "intro": {
+      "ongoing": "Gastos no ano até agora",
+      "ongoingHidden": "Assinaturas no ano até agora",
+      "year": "Gastos anuais",
+      "yearHidden": "Assinaturas do ano"
+    },
+    "perDay": "{amount}/dia em média",
+    "longest": "Assinatura mais antiga",
+    "duration": "{y} a {m} m",
+    "busiest": "Mês com maior gasto",
+    "month": "{month}",
+    "newEnded": "Novas / encerradas",
+    "saved": "{amount} economizados",
+    "ended": "Encerradas: {count}",
+    "noneEnded": "Nenhuma encerrada",
+    "currencies": "Moedas utilizadas",
+    "currencyCount": "{count}",
+    "nowMonthly": "Custo mensal atual: {amount}"
+  },
+  "stars": {
+    "head": "{year}\nGastos {whose} com assinaturas",
+    "foot": "O tamanho dos círculos representa os gastos"
+  },
+  "spendBasis": "Valor total pago, incluindo adiantamentos para membros",
+  "stopLoss": "Perda não reembolsada neste ano: {amount}"
+}

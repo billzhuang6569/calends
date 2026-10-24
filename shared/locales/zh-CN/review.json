@@ -1,0 +1,69 @@
+{
+  "title": "分享年度回顾",
+  "fileName": "订阅年度回顾-{year}-{style}.png",
+  "style": {
+    "poster": "海报",
+    "receipt": "小票",
+    "card": "卡片",
+    "stars": "支出分布"
+  },
+  "unassigned": "未指定",
+  "me": "我",
+  "whose": "{name}",
+  "whoseSelf": "我",
+  "topSpend": "支出最多",
+  "ofYear": "占年度支出 {pct}",
+  "n": {
+    "subs": "{count} 个订阅",
+    "charges": "{count} 次扣款",
+    "currencies": "{count} 种货币"
+  },
+  "receipt": {
+    "shop": "{whose}的订阅账本",
+    "asOf": "年度账单\n截至 {date}",
+    "fullYear": "{year} 年度账单",
+    "no": "单号 {no}",
+    "item": "品名",
+    "share": "占比",
+    "amount": "金额",
+    "rest": "其余 {count} 项",
+    "count": "共 {items} 项 / {charges} 笔",
+    "total": "合计"
+  },
+  "poster": {
+    "kicker": "{whose}的订阅年度回顾",
+    "ongoing": "{subs}\n{charges}",
+    "ongoingHidden": "{charges}\n{currencies}",
+    "year": "{subs}\n{charges}",
+    "yearHidden": "{charges}\n{currencies}",
+    "newEnded": "新增 {added}\n结束 {ended}",
+    "perDay": "日均 {amount}"
+  },
+  "card": {
+    "head": "{whose} 的订阅",
+    "intro": {
+      "ongoing": "本年累计支出",
+      "ongoingHidden": "本年订阅数量",
+      "year": "全年订阅支出",
+      "yearHidden": "全年订阅数量"
+    },
+    "perDay": "平均每天 {amount}",
+    "longest": "订阅时间最长",
+    "duration": "{y} 年 {m} 个月",
+    "busiest": "支出最多的月份",
+    "month": "{n} 月",
+    "newEnded": "新增 / 结束",
+    "saved": "退订已省 {amount}",
+    "ended": "已结束 {count} 个",
+    "noneEnded": "无已结束订阅",
+    "currencies": "支付币种",
+    "currencyCount": "{count} 种",
+    "nowMonthly": "当前月成本 {amount}"
+  },
+  "stars": {
+    "head": "{year}\n{whose}的订阅支出",
+    "foot": "圆的大小表示支出金额"
+  },
+  "spendBasis": "全额实付，含替成员垫付",
+  "stopLoss": "这一年未退款损失 {amount}"
+}

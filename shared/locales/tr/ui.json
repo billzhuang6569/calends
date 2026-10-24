@@ -1,0 +1,27 @@
+{
+  "close": "Kapat",
+  "error": {
+    "loginRequired": "Lütfen önce giriş yapın",
+    "requestFailed": "İstek başarısız oldu ({status})",
+    "wholeCurrency": "{currency} tutarları tam sayı olmalıdır"
+  },
+  "theme": {
+    "light": "Açık",
+    "dark": "Koyu",
+    "system": "Sistem"
+  },
+  "currency": {
+    "XCG": "Karayip guldeni",
+    "ZWG": "Zimbabve altını"
+  },
+  "method": {
+    "none": "Belirtilmedi"
+  },
+  "toolbar": {
+    "openSidebar": "Kenar çubuğunu aç",
+    "add": "Abonelik ekle"
+  },
+  "working": "İşleniyor…",
+  "undo": "Geri al",
+  "restored": "Geri yüklendi"
+}

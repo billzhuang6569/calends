@@ -1,0 +1,84 @@
+{
+  "title": "Поделиться итогами года",
+  "fileName": "subscriptions-{year}-in-review-{style}.png",
+  "style": {
+    "poster": "Постер",
+    "receipt": "Чек",
+    "card": "Карточка",
+    "stars": "Распределение расходов"
+  },
+  "unassigned": "Не указано",
+  "me": "Я",
+  "whose": "{name}: подписки",
+  "whoseSelf": "Мои подписки",
+  "topSpend": "Наибольшие расходы",
+  "ofYear": "{pct} годовых расходов",
+  "n": {
+    "subs": {
+      "one": "{count} подписка",
+      "few": "{count} подписки",
+      "many": "{count} подписок",
+      "other": "{count} подписки"
+    },
+    "charges": {
+      "one": "{count} списание",
+      "few": "{count} списания",
+      "many": "{count} списаний",
+      "other": "{count} списания"
+    },
+    "currencies": {
+      "one": "{count} валюта",
+      "few": "{count} валюты",
+      "many": "{count} валют",
+      "other": "{count} валюты"
+    }
+  },
+  "receipt": {
+    "shop": "{whose}",
+    "asOf": "Итоги года\nНа {date}",
+    "fullYear": "Итоги {year} года",
+    "no": "№ {no}",
+    "item": "Позиция",
+    "share": "Доля",
+    "amount": "Сумма",
+    "rest": "Ещё {count}",
+    "count": "Позиций {items} / Списаний {charges}",
+    "total": "ИТОГО"
+  },
+  "poster": {
+    "kicker": "{whose}",
+    "ongoing": "{subs}\n{charges}",
+    "ongoingHidden": "{charges}\n{currencies}",
+    "year": "{subs}\n{charges}",
+    "yearHidden": "{charges}\n{currencies}",
+    "newEnded": "Добавлено: {added}\nЗавершено: {ended}",
+    "perDay": "В среднем {amount} в день"
+  },
+  "card": {
+    "head": "{whose}",
+    "intro": {
+      "ongoing": "Расходы с начала года",
+      "ongoingHidden": "Подписки с начала года",
+      "year": "Годовые расходы",
+      "yearHidden": "Подписки за год"
+    },
+    "perDay": "В среднем {amount} в день",
+    "longest": "Самая длительная подписка",
+    "duration": "{y} г. {m} мес.",
+    "busiest": "Месяц с наибольшими расходами",
+    "month": "{month}",
+    "newEnded": "Добавлено / завершено",
+    "saved": "Сэкономлено {amount}",
+    "ended": "Завершено: {count}",
+    "noneEnded": "Нет завершённых подписок",
+    "currencies": "Использованные валюты",
+    "currencyCount": "{count}",
+    "nowMonthly": "Текущие расходы в месяц: {amount}"
+  },
+  "stars": {
+    "head": "{year}\n{whose}",
+    "foot": "Размер круга соответствует расходам"
+  },
+  "spendBasis": "Полная сумма оплаты, включая авансы за участников",
+  "stopLoss": "Невозмещённый убыток за год: {amount}"
+}

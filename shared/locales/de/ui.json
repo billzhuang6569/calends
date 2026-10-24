@@ -1,0 +1,27 @@
+{
+  "close": "Schließen",
+  "error": {
+    "loginRequired": "Bitte melde dich zuerst an",
+    "requestFailed": "Anfrage fehlgeschlagen ({status})",
+    "wholeCurrency": "Beträge in {currency} müssen ganze Zahlen sein"
+  },
+  "theme": {
+    "light": "Hell",
+    "dark": "Dunkel",
+    "system": "System"
+  },
+  "currency": {
+    "XCG": "Karibischer Gulden",
+    "ZWG": "Zimbabwe Gold"
+  },
+  "method": {
+    "none": "Nicht festgelegt"
+  },
+  "toolbar": {
+    "openSidebar": "Seitenleiste öffnen",
+    "add": "Abo hinzufügen"
+  },
+  "working": "Wird ausgeführt…",
+  "undo": "Rückgängig",
+  "restored": "Wiederhergestellt"
+}

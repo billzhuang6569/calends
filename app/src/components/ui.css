@@ -1,0 +1,500 @@
+@import '../control-sizes.css';
+
+/* Shared alignment and interaction primitives. App only; public has its own style tree. */
+:root {
+  --icon-button-size: var(--ctl-h-md);
+}
+.ui-title,
+.icon-text {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+}
+.ui-title {
+  margin: 0;
+  line-height: 1.4;
+}
+.ui-title-text,
+.text-ellipsis {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ui-title > .hint,
+.icon-text > svg,
+.icon-text > img {
+  flex-shrink: 0;
+}
+.icon-btn {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: var(--icon-button-size);
+  height: var(--icon-button-size);
+  min-width: var(--icon-button-size);
+  min-height: var(--icon-button-size);
+  padding: 0;
+  border: 0;
+  border-radius: var(--radius-pill);
+  background: none;
+  color: var(--label-2);
+  box-shadow: inset 0 0 0 var(--hairline) var(--line);
+  cursor: pointer;
+  transition:
+    background var(--duration) var(--ease),
+    color var(--duration) var(--ease);
+}
+.icon-btn:hover {
+  background: var(--hover);
+  color: var(--label);
+}
+.icon-btn.accent {
+  background: var(--ink);
+  color: var(--on-ink);
+  box-shadow: none;
+}
+/*
+ * 全站表头：无底色、12px 常规字重浅灰标签、至少 36px 高、底部 0.5px 分隔线。
+ * 列宽与左右边距由各表自己的行布局决定，表头只管这一层视觉。
+ */
+/* 重复类名提高优先级：盖过各表行样式里的字号、字重（如最后一列加粗） */
+.table-head.table-head {
+  height: 36px;
+  min-height: 36px;
+  padding-top: 0;
+  padding-bottom: 0;
+  background: none;
+  font-size: var(--fs-1);
+  font-weight: 400;
+  color: var(--label-3);
+  border-bottom: var(--hairline) solid var(--sep);
+}
+.table-head.table-head > *,
+.table-head.table-head > :last-child,
+.table-head.table-head th {
+  font-size: var(--fs-1);
+  font-weight: 400;
+  color: var(--label-3);
+}
+
+/* 侧栏折叠/展开是唯一不带描边的圆形按钮：贴着侧栏边缘，描边会显得多余 */
+.icon-btn.sb-toggle {
+  box-shadow: none;
+}
+/* 删除类操作：与同排圆形按钮同样的灰色描边、无底色，只把图标换成红色；悬停时浅红底 */
+.icon-btn.danger {
+  color: var(--red);
+}
+.icon-btn.danger:hover {
+  background: var(--red-3);
+  color: var(--red);
+}
+.icon-btn svg,
+.icon-btn .i {
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+.icon-btn.hint {
+  box-shadow: none;
+  font-size: var(--fs-2);
+}
+.icon-btn.hint .i {
+  width: 1em;
+  height: 1em;
+  max-width: 18px;
+  max-height: 18px;
+}
+:where(button, a, input, textarea, [role='button'], [role='link'], [tabindex]):focus-visible,
+.icon-btn[data-focus-visible] {
+  outline: var(--hairline) solid var(--focus-ring);
+  outline-offset: 3px;
+}
+:where(button):disabled,
+.icon-btn[data-disabled] {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+.info-tip {
+  z-index: 100;
+  max-width: min(320px, calc(100vw - 16px));
+  max-height: calc(100dvh - 16px);
+  overflow-y: auto;
+  overflow-wrap: anywhere;
+  padding: 8px 11px;
+  border: var(--hairline) solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--card);
+  color: var(--label);
+  box-shadow: var(--shadow-lg);
+  font-size: var(--fs-1);
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* 行尾「编辑 + 删除」：删除第一次点击向左伸展成长条（宽度 = 两个按钮 + 间距），显示「确认 ✓」；再点才删除 */
+.row-actions {
+  position: relative;
+  display: inline-flex;
+  justify-content: flex-end;
+  gap: 8px;
+  flex: 0 0 auto;
+}
+.row-actions.pair {
+  justify-content: flex-start;
+  width: calc(var(--icon-button-size) * 2 + 8px);
+}
+.row-actions .row-edit {
+  transition:
+    opacity var(--duration) var(--ease),
+    transform var(--duration) var(--ease);
+}
+.row-actions.armed .row-edit {
+  opacity: 0;
+  transform: scale(0.85);
+  pointer-events: none;
+}
+.row-actions .row-remove {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-pill);
+}
+.row-actions.pair .row-remove {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition:
+    width var(--duration) var(--ease),
+    background var(--duration) var(--ease),
+    color var(--duration) var(--ease);
+}
+.row-actions.armed .row-remove {
+  width: 100%;
+  min-width: max-content;
+  background: var(--red-3);
+}
+.row-remove .rm-x,
+.row-remove .rm-confirm {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity var(--duration) var(--ease);
+}
+.row-remove .rm-confirm {
+  /* 右端留一个按钮宽的格子，对勾在其中居中，与原叉号同一位置；文字居中在左边剩余空间 */
+  position: static;
+  display: grid;
+  grid-template-columns: 1fr var(--icon-button-size);
+  align-items: center;
+  justify-items: center;
+  font-size: var(--fs-2);
+  font-weight: 600;
+  white-space: nowrap;
+  opacity: 0;
+  width: 0;
+  overflow: hidden;
+}
+.row-remove .rm-confirm > span {
+  padding-left: 10px;
+}
+.row-remove .rm-confirm svg {
+  width: 16px;
+  height: 16px;
+}
+.row-remove .rm-confirm path {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  transition: stroke-dashoffset var(--duration) var(--ease);
+}
+.row-actions.armed .rm-x {
+  opacity: 0;
+  transform: rotate(-90deg) scale(0.6);
+}
+.row-actions.armed .rm-confirm {
+  opacity: 1;
+  width: 100%;
+  transition-delay: 0ms;
+}
+.row-actions.armed .rm-confirm path {
+  stroke-dashoffset: 0;
+}
+/* 确认删除：长条填满红色，对勾弹一下 */
+.row-actions.done .row-remove {
+  background: var(--red-9);
+  color: var(--white-a12);
+}
+.row-actions.done .rm-confirm svg {
+  animation: rm-pop var(--duration) var(--ease);
+}
+@keyframes rm-pop {
+  50% {
+    transform: scale(1.12);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .row-actions *,
+  .row-actions .row-remove,
+  .row-remove .rm-confirm path {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* Independent cards follow subscription-detail KPIs; direct slots keep carpool content intact. */
+.metric-cards {
+  container-type: inline-size;
+  min-width: 0;
+  width: 100%;
+}
+.metric-grid {
+  display: grid;
+  grid-template-columns: repeat(var(--metric-columns), minmax(0, 1fr));
+  gap: 12px;
+}
+.metric-grid > div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+  padding: 14px 16px 16px;
+  border-radius: var(--radius-md);
+  background: var(--card);
+  box-shadow: 0 0 0 var(--hairline) var(--gray-6);
+  overflow-wrap: anywhere;
+}
+.metric-cards.inline .metric-grid {
+  gap: 0;
+}
+.metric-cards.inline .metric-grid > div {
+  padding: 0 16px;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  border-left: var(--hairline) solid var(--sep);
+}
+.metric-cards.inline .metric-grid > div:first-child {
+  padding-left: 0;
+  border-left: 0;
+}
+.metric-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  min-height: 22px;
+}
+.metric-top > small,
+.metric-grid > div > small {
+  color: var(--label-2);
+  font-size: var(--fs-1);
+}
+.metric-value,
+.metric-grid > div > b {
+  color: var(--label);
+  font-size: var(--fs-3);
+  font-weight: 650;
+  letter-spacing: -0.025em;
+  font-variant-numeric: tabular-nums;
+  line-height: 30px;
+}
+.metric-value .amt,
+.metric-value .amt .cur,
+.metric-value .amt .dec,
+.metric-value > b {
+  font-size: var(--fs-3);
+  font-weight: 650;
+  white-space: normal;
+}
+.metric-note,
+.metric-grid > div > span {
+  color: var(--label-3);
+  font-size: var(--fs-1);
+}
+.metric-note small {
+  display: block;
+  font-size: var(--fs-1);
+}
+.metric-value:is(.done, .gain, .green),
+.metric-grid > div > b:is(.done, .gain, .green) {
+  color: var(--green);
+}
+.metric-value.loss,
+.metric-grid > div > b.loss {
+  color: var(--red);
+}
+.metric-value.warn,
+.metric-grid > div > b.warn {
+  color: var(--orange);
+}
+@container (max-width: 520px) {
+  .metric-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+  .metric-grid > div {
+    display: grid;
+    grid-template-areas: 'label' 'value' 'accessory' 'note';
+    align-content: start;
+    padding: 10px 12px 12px;
+  }
+  .metric-top {
+    display: contents;
+  }
+  .metric-top > small {
+    grid-area: label;
+  }
+  .metric-top > :not(small) {
+    grid-area: accessory;
+    justify-self: start;
+  }
+  .metric-value {
+    grid-area: value;
+    line-height: 24px;
+  }
+  .metric-note {
+    grid-area: note;
+  }
+  .metric-grid > div:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+  }
+}
+@container (max-width: 300px) {
+  .metric-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* 大数字下方的指标与上方说明行留出段落间距（窄栏两列与报告头部一行都适用） */
+.metric-cards.plain,
+.hero-delta + .metric-cards {
+  margin-top: 20px;
+}
+.metric-cards.plain .metric-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px 24px;
+}
+.metric-cards.plain .metric-grid > div {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+}
+@container (max-width: 520px) {
+  .metric-cards.plain .metric-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px 16px;
+  }
+  .metric-cards.plain .metric-grid > div {
+    padding: 0;
+  }
+}
+
+/* 卡片内的竖线分隔指标：窄屏也保持一行（四项时两行两列），分隔线跟着换行 */
+@container (max-width: 520px) {
+  .metric-cards.inline .metric-grid {
+    grid-template-columns: repeat(var(--metric-columns), minmax(0, 1fr));
+    row-gap: 12px;
+  }
+  .metric-cards.inline .metric-grid > div {
+    padding: 0 10px;
+  }
+  /* 灰卡在窄屏把落单的最后一项铺满整行；一行指标不需要 */
+  .metric-cards:is(.inline, .plain) .metric-grid > div:last-child:nth-child(odd) {
+    grid-column: auto;
+  }
+  .metric-cards.inline[data-count='4'] .metric-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .metric-cards.inline[data-count='4'] .metric-grid > div:nth-child(3) {
+    padding-left: 0;
+    border-left: 0;
+  }
+}
+
+.sheet-actions,
+.cell.sheet-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  grid-column: 1 / -1;
+  min-width: 0;
+}
+.sheet-actions > :is(.primary, .danger-solid) {
+  order: 1;
+}
+.sheet-actions > :is(.btn, .dt-act) {
+  border-radius: var(--radius-pill);
+}
+
+/* Image actions share the normal icon hit area; only page cards fade them. */
+.copy-card {
+  position: relative;
+  container-type: inline-size;
+}
+.copy-tools,
+.copy-controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  flex: 0 0 auto;
+}
+.copy-controls .seg.sm {
+  height: var(--ctl-h-md);
+}
+.copy-corner {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  z-index: 1;
+}
+.copy-card > .copy-corner + .stmt-l,
+.copy-card > .copy-corner + .card-h {
+  padding-right: calc(var(--ctl-h-md) + 8px);
+}
+.copy-card .stmt-cap {
+  padding-right: calc(var(--ctl-h-md) + 8px);
+}
+.copy-hover {
+  opacity: 0;
+  transition: opacity var(--duration) var(--ease);
+}
+.copy-card:hover .copy-hover,
+.copy-hover:focus-visible {
+  opacity: 0.65;
+}
+.copy-hover:hover,
+.copy-hover:focus-visible {
+  opacity: 1;
+}
+@media (hover: none) {
+  .copy-hover {
+    opacity: 0.4;
+  }
+}
+/* Keep existing controls reachable when a title row cannot fit another action. */
+@container (max-width: 360px) {
+  .copy-controls > .copy-hover {
+    display: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .copy-hover {
+    transition: none;
+  }
+}
+
+@container (max-width: 440px) {
+  .hero-r .copy-controls > .copy-hover {
+    display: none;
+  }
+}

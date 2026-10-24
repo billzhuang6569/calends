@@ -1,0 +1,78 @@
+{
+  "title": "Partager le bilan annuel",
+  "fileName": "abonnements-bilan-{year}-{style}.png",
+  "style": {
+    "poster": "Affiche",
+    "receipt": "Ticket",
+    "card": "Carte",
+    "stars": "Répartition des dépenses"
+  },
+  "unassigned": "Non attribué",
+  "me": "Moi",
+  "whose": "de {name}",
+  "whoseSelf": "personnels",
+  "topSpend": "Dépense la plus élevée",
+  "ofYear": "{pct} des dépenses annuelles",
+  "n": {
+    "subs": {
+      "one": "{count} abonnement",
+      "other": "{count} abonnements"
+    },
+    "charges": {
+      "one": "{count} prélèvement",
+      "other": "{count} prélèvements"
+    },
+    "currencies": {
+      "one": "{count} devise",
+      "other": "{count} devises"
+    }
+  },
+  "receipt": {
+    "shop": "Abonnements {whose}",
+    "asOf": "Bilan annuel\nAu {date}",
+    "fullYear": "Bilan annuel {year}",
+    "no": "N° {no}",
+    "item": "Article",
+    "share": "Part",
+    "amount": "Montant",
+    "rest": "{count} de plus",
+    "count": "Articles {items} / Prélèvements {charges}",
+    "total": "TOTAL"
+  },
+  "poster": {
+    "kicker": "Abonnements {whose}",
+    "ongoing": "{subs}\n{charges}",
+    "ongoingHidden": "{charges}\n{currencies}",
+    "year": "{subs}\n{charges}",
+    "yearHidden": "{charges}\n{currencies}",
+    "newEnded": "Ajoutés : {added}\nTerminés : {ended}",
+    "perDay": "{amount}/jour en moyenne"
+  },
+  "card": {
+    "head": "Abonnements {whose}",
+    "intro": {
+      "ongoing": "Dépenses depuis janvier",
+      "ongoingHidden": "Abonnements depuis janvier",
+      "year": "Dépenses annuelles",
+      "yearHidden": "Abonnements de l’année"
+    },
+    "perDay": "{amount}/jour en moyenne",
+    "longest": "Abonnement le plus ancien",
+    "duration": "{y} an(s) {m} mois",
+    "busiest": "Mois le plus coûteux",
+    "month": "{month}",
+    "newEnded": "Ajoutés / terminés",
+    "saved": "{amount} économisés",
+    "ended": "Terminés : {count}",
+    "noneEnded": "Aucun terminé",
+    "currencies": "Devises utilisées",
+    "currencyCount": "{count}",
+    "nowMonthly": "Coût mensuel actuel : {amount}"
+  },
+  "stars": {
+    "head": "{year}\nAbonnements {whose}",
+    "foot": "La taille des cercles représente les dépenses"
+  },
+  "spendBasis": "Montant total payé, avances pour les membres comprises",
+  "stopLoss": "Perte non remboursée cette année : {amount}"
+}

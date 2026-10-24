@@ -1,0 +1,27 @@
+{
+  "close": "Close",
+  "error": {
+    "loginRequired": "Please sign in first",
+    "requestFailed": "Request failed ({status})",
+    "wholeCurrency": "{currency} amounts must be whole numbers"
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "currency": {
+    "XCG": "Caribbean guilder",
+    "ZWG": "Zimbabwe Gold"
+  },
+  "method": {
+    "none": "Not set"
+  },
+  "toolbar": {
+    "openSidebar": "Open sidebar",
+    "add": "Add subscription"
+  },
+  "working": "Working…",
+  "undo": "Undo",
+  "restored": "Restored"
+}
